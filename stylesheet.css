@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #FEFADC;
+}
+
+.container{
+    padding: 20px;
+    width: 350px;
+    background: black;
+    border-radius: 7px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container .add-task-box input{
+    all: unset;
+    height: 45px;
+    width: 230px;
+    background: #1e1e1e;
+    padding-left: 20px;
+    color: white;
+    transition: all .2s;
+    border-radius: 10px;
+}
+
+.container .add-task-box .add-btn{
+    all: unset;
+    height: 45px;
+    width: 45px;
+    background: orange;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.container .all-tasks{
+    max-height: 350px;
+    margin-top: 20px;
+}
+
+.container .all-tasks .task{
+    height: 50px;
+    width: 100%;
+    background: #1e1e1e;
+    border: 1px solid #e6d4b6;
+    border-radius: 7px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.container .all-tasks .task input{
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    border: 1px solid orange;
+    border-radius: 100%;
+    margin-left: 13px;
+    cursor: pointer;
+}
+.container .all-tasks .task input:checked{
+    background: #03ff03;
+    border-color: #03ff03;
+}
+
+.container .all-tasks .task .userTask{
+    margin-left: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.container .all-tasks .task .btns{
+    height: 50px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 30px;
+}
+
+.container .all-tasks .task .btns .dlt-btn{
+    all: unset;
+    height: 33px;
+    width: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    background: orange;
+    color: #0d0d0d;
+    font-size: 14px;
+    font-weight: 200;
+    cursor: pointer;
+}
+ .container .others{
+    height: 50px;
+    border: 1px solid grey;
+    margin-top: 20px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+ }
+
+ .container .others .no-of-tasks{
+    font-size: 14px;
+    color:darkgrey;
+    margin-left: 12px;
+ }
+
+ .container .others .clear-all-btn{
+    all: unset;
+    height: 33px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:3px;
+    font-size: 13px;
+    position: absolute;
+    right: 30px;
+    background: orange;
+    color: #0d0d0d;
+    cursor: pointer;
+ }
