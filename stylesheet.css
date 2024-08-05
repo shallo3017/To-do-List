@@ -83,6 +83,10 @@ body{
     font-size: 13px;
 }
 
+.container .all-tasks .task .userTask.checked{
+    text-decoration: line-through;
+}
+
 .container .all-tasks .task .btns{
     height: 50px;
     width: 35px;
@@ -120,6 +124,8 @@ body{
     font-size: 14px;
     color:darkgrey;
     margin-left: 12px;
+    position: relative;
+    top: 4px;
  }
 
  .container .others .clear-all-btn{
@@ -136,4 +142,20 @@ body{
     background: orange;
     color: #0d0d0d;
     cursor: pointer;
+    margin-top: -19px;
  }
+
+ .container .all-tasks .clipboard-icon{
+    font-size: 85px;
+    color: grey;
+    text-align: center;
+    margin-top: -9px;
+ }
+
+.container .all-tasks .no-task-message{
+    color: grey;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600px;
+    margin-top: -5px;
+}
